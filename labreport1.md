@@ -18,7 +18,9 @@ process. Next, locate it on your computer and open vscode. If you see a screen a
 
 In this section, I'll be showing you how to connect to a remote server on a remote computer. As a Macbook user, I did not need to download git but for 
 future reference, if you are operating a Windows device, you'll need to download by going to the [git](https://gitforwindows.org/) download page and 
-follow the instructions givven. 
+follow the instructions given. 
+
+After doing so, in order to remotely connect, you'll need your cse 15L specific account. You can access your cse 15L specific account through the [account lookup website](https://sdacs.ucsd.edu/~icc/index.php). After filling in the required credentials (your ucsd email and PID), you'll be moved to a page containing your additional accounts. Your cse 15L specific account can be found under the large heading ADDITIONAL ACCOUNTS with the first nine characters being `cs15lsp23`. After finding your account, you may be asked to reset your password. You can follow this [tutorial](https://drive.google.com/file/d/17IDZn8Qq7Q0RkYMxdiIR0o6HJ3B5YqSW/view?usp=share_link) to reset your password.
 
 Continuing on, open vscode on your device and open a `ssh` terminal by using the keyboard shortcut (this is assuming you are on macbook) 
 command + shift + P and clicking on "Debug: JavaScript Debug Terminal" in order to open the terminal. After opening the terminal, log into the server 
@@ -54,7 +56,7 @@ directory. I used the `pwd` command after to check if I successfully switched in
 
 ![Image](cd.png)
 
-Inputting the command `ls -lat` will list the content of the given directory `lat` as shown in the image below:
+Inputting the command `ls -lat` is similiar to running `ls -l -a -t`. This command will display the all the given entries/files sorted by their modification time in a long list format as shown in the image below:
 
 ![Image](lslat.png)
 
