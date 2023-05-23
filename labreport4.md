@@ -19,7 +19,7 @@ type: ssh `<enter>` cs15lsp23xx@ieng6.ucsd.edu `<enter>` (enter your password if
 
 `$ ssh cs15lsp23xx@ieng6.ucsd.edu`
 
-![Image]
+![Image](ssh.png)
 
 After logging in your account successfully, enter in the following command to clone this respository to your account:
 
@@ -33,7 +33,7 @@ Once you've cloned it into your account, change your directory into the newly cl
 
 After doing so, use the `ls` command in your terminal to see the current files in your directory. It should look something like this: 
 
-![Image]
+![Image](gitclone.png)
 
 # 2. Editing the code file using vim 
 
@@ -45,7 +45,7 @@ type: bash `<enter>` test.sh `<enter>`
 
 `$ bash test.sh` 
 
-![Image] 
+![Image](testfailed.png)
 
 Seeing that it failed, we now enter the code file through vim by typing the following in the terminal:
 
@@ -55,7 +55,7 @@ type: vim `<enter>` ListExamples.java `<enter>`
 
 After doing so, a file that looks like this should open up:
 
-![Image]
+![Image](code.png)
 
 The error is located in the last while loop of the merge method. The error is that `index1` is used instead of `index2` Starting at the top of the page, hit the 
 following keys to edit the vim editor. (NOTE: "type:" indicates the series of keys I hit on my keyboard in the vim editor.
@@ -72,7 +72,7 @@ In the vim editor, you can use the `h` (right), `j` (down) , `k` (up) , `l` (lef
 in the term `index1` that I need to fix since it should be `index2`. Clicking x after shifting my cursor onto the the 1 part of `index1` allows for me to delete the 1. To fix the error,
 enter the `insert` mode of vim in order to insert a 2 at the end of `index` and hit your escape key to exit. If your code looks like this, you've successfully fixed the error! 
 
-![Image]
+![Image](changecode.png)
 
 type: :wq `<enter>` 
 
@@ -83,7 +83,7 @@ type: `<up>` `<up>` `<enter>`
 Since we used the `bash test.sh` command previously, hitting the arrow key twice allows for us to reach the command since it is in our command history. 
 After running the tests successfully, the terminal should show that the tests now pass! 
 
-![Image] 
+![Image](fixedcode.png)
 
 Yay!! We did it :D 
 
@@ -91,7 +91,15 @@ Yay!! We did it :D
 
 After successfully fixing the error and having the tests pass, we need to save our changes. 
 
-type: git add ListExamples.java
+type: git add ListExamples.java `<enter>` git commit -m "Updated" `<enter>` git push origin main `<enter>` 
+
+We want to update our github account as well so using the `git add` command allows us to add the file we changed,  `git commit ` allows for us
+to commit the changes we made (`-m "Updated"` allows for us to see that it successfully updated) and `git push origin main` allows us to commit the 
+final changes to our file. 
+
+![Image](gitcom.png)
+
+Thank you for tuning in to my recent lab report! Hope to see you again soon! :D
 
 
 
