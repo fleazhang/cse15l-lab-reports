@@ -45,7 +45,7 @@ type: bash `<enter>` test.sh `<enter>`
 
 `$ bash test.sh` 
 
-![Image](testfailed.png)
+![Image](testfail.png)
 
 Seeing that it failed, we now enter the code file through vim by typing the following in the terminal:
 
